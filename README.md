@@ -18,7 +18,7 @@ Note: Used Python 3.11
    pip install -r requirements.txt
    ```
 
-3. Run MeiliSearch
+3. Install and run MeiliSearch
 
    ```
    curl -L https://install.meilisearch.com | sh && ./meilisearch --master-key=masterKey
@@ -26,19 +26,22 @@ Note: Used Python 3.11
 
 4. Add documents of the review dataset
 
+   **This step would take a minute.**
+
    ```
    python reviews_index.py
    ```
 
 5. Add documents of the mc4 dataset
 
-   This step would take a minute.
+   **This step would take a minute.**
 
    ```
    python mc4_index.py
    ```
 
-6. Get tasks and the error will be reproduced
+6. Get tasks after several minutes, the error will be reproduced
+
 
    ```
    python get_tasks.py
