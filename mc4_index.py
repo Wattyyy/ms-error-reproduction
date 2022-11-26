@@ -5,7 +5,7 @@ import meilisearch
 
 # https://huggingface.co/datasets/mc4
 dataset = load_dataset("mc4", "ja", split="train", streaming=True)
-documents: list[dict[str, Any]] = list(dataset.take(30000))
+documents: list[dict[str, Any]] = list(dataset.take(200000))
 # add primary key and convert datetime string into int type
 for i, document in enumerate(documents):
     document["id"] = i
