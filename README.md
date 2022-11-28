@@ -1,6 +1,8 @@
 # About
 
-Reproduction of MeiliSearch's error relating to [#2807](https://github.com/meilisearch/meilisearch/issues/2807)
+~~Reproduction of MeiliSearch's error relating to [#2807](https://github.com/meilisearch/meilisearch/issues/2807)~~
+
+**Error is fixed in MeiliSearch >= v0.30.0**
 
 # Flow of Error Reproduction
 
