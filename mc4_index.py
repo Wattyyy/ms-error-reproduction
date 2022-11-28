@@ -13,7 +13,7 @@ for i, document in enumerate(documents):
         datetime.strptime(document["timestamp"], "%Y-%m-%dT%H:%M:%SZ").timestamp()
     )
 
-client = meilisearch.Client("http://127.0.0.1:7700", "masterKey")
+client = meilisearch.Client("http://0.0.0.0:7700", "masterKey")
 index = client.index("mc4")
 index.update_settings(
     {

@@ -18,10 +18,10 @@ Note: Used Python 3.11
    pip install -r requirements.txt
    ```
 
-3. Install and run MeiliSearch
+3. Run MeiliSearch
 
    ```
-   curl -L https://install.meilisearch.com | sh && ./meilisearch --master-key=masterKey
+   docker run -it --rm -p 7700:7700 -v $(pwd)/meili_data:/meili_data getmeili/meilisearch:v0.30.0
    ```
 
 4. Add documents of the review dataset
@@ -41,7 +41,6 @@ Note: Used Python 3.11
    ```
 
 6. Get tasks after several minutes, the error will be reproduced
-
 
    ```
    python get_tasks.py
