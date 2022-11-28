@@ -23,7 +23,7 @@ Note: Used Python 3.10.6
 3. Run MeiliSearch
 
    ```
-   docker run -it --rm -p 7700:7700 -v $(pwd)/meili_data:/meili_data getmeili/meilisearch:v0.30.0
+   docker run -it --rm -p 7700:7700 -v $(pwd)/meili_data:/meili_data getmeili/meilisearch:v0.29
    ```
 
 4. Add documents of the review dataset
